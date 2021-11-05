@@ -1,0 +1,99 @@
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin margin-padding-zero {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin section-title {
+  font-weight: 700;
+  font-size: 50px;
+}
+
+@mixin line-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@mixin grey-line {
+  flex-grow: 1;
+  display: block;
+  height: 1px;
+  background-color: $line;
+  border: 1px solid $line
+}
+
+
+@mixin base-width {
+  width: 1530px;
+  margin: 0 auto;
+}
+
+@mixin link-hoover {
+  &:hover,
+  &:focus {
+    color: $blue;
+  }
+}
+
+@mixin icon-image-shape {
+  display: block;
+  border-radius: 50%;
+  background-color: $icon-grey;
+}
+
+@mixin text-person {
+  display: block;
+  box-sizing: border-box;
+  @include margin-padding-zero;
+  margin-bottom: 20px;
+}
+
+@mixin header-inner-fifth-block {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1em;
+}
+// Технические миксины
+
+@mixin red-outline {
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
+}
+
+@mixin green-outline {
+  outline: 5px solid rgba(0, 255, 0, 0.3);
+  outline-offset: -5px;
+}
+
+@mixin yellow-outline {
+  outline: 5px solid rgba(255, 255, 0, 0.3);
+  outline-offset: -5px;
+}
+
+@mixin blue-outline {
+  outline: 5px solid rgba(0, 0, 255, 0.3);
+  outline-offset: -5px;
+}
+
+@mixin purple-ouitline {
+  outline: 5px solid rgba(128, 72, 123, 0.3);
+  outline-offset: -5px;
+}
+
+@mixin yellowgreen-ouitline {
+  outline: 5px solid yellowgreen;
+  outline-offset: -5px;
+}
