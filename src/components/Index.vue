@@ -6,17 +6,12 @@
       </svg>
       <nav class="page-header__nav main-nav">
         <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Lorem</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Ipsum</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Simply</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Dummy</a>
+          <li
+            v-for="(navItem, idx) in mainNavigation"
+            :key="idx"
+            class="main-nav__item"
+          >
+            <a class="main-nav__link" :href="navItem.url">{{ navItem.name }}</a>
           </li>
         </ul>
       </nav>
@@ -51,24 +46,13 @@
               </div>
             </div>
             <ul class="first-block__content-fetures">
-              <li class="first-block__content-fetures-item">
+              <li
+                v-for="(firstBlockItem, idx) in firstBlockList"
+                :key="idx"
+                class="first-block__content-fetures-item"
+              >
                 <p class="first-block__content-fetures-item-text">
-                  It is a long established fact that a reader
-                </p>
-              </li>
-              <li class="first-block__content-fetures-item">
-                <p class="first-block__content-fetures-item-text">
-                  The point of using Lorem Ipsum is that
-                </p>
-              </li>
-              <li class="first-block__content-fetures-item">
-                <p class="first-block__content-fetures-item-text">
-                  Many desktop publishing packages
-                </p>
-              </li>
-              <li class="first-block__content-fetures-item">
-                <p class="first-block__content-fetures-item-text">
-                  There are many variations of passages
+                  {{ firstBlockItem.content }}
                 </p>
               </li>
             </ul>
@@ -179,40 +163,14 @@
             <span class="advantages__title-line"></span>
           </div>
           <ul class="advantages__list">
-            <li class="advantages__item advantage">
-              <span class="advantage__number">01</span>
+            <li
+              v-for="(advantage, idx) in secondBlockContent.advantages"
+              :key="idx"
+              class="advantages__item advantage"
+            >
+              <span class="advantage__number">{{ advantage.icon }}</span>
               <p class="advantage__content">
-                Contrary to popular belief, Lorem Ipsum
-              </p>
-            </li>
-            <li class="advantages__item advantage">
-              <span class="advantage__number">02</span>
-              <p class="advantage__content">
-                Random text it has roots in a piece of classical
-              </p>
-            </li>
-            <li class="advantages__item advantage">
-              <span class="advantage__number">03</span>
-              <p class="advantage__content">
-                Latin literature from 45 BC, making it over 2000 years old
-              </p>
-            </li>
-            <li class="advantages__item advantage">
-              <span class="advantage__number">04</span>
-              <p class="advantage__content">
-                Latin literature from 45 BC, making it over 2000 years old
-              </p>
-            </li>
-            <li class="advantages__item advantage">
-              <span class="advantage__number">05</span>
-              <p class="advantage__content">
-                If you are going to use a passage of Lorem Ipsum
-              </p>
-            </li>
-            <li class="advantages__item advantage">
-              <span class="advantage__number">06</span>
-              <p class="advantage__content">
-                There are many variations of passages of Lorem Ipsum
+                {{ advantage.content }}
               </p>
             </li>
           </ul>
@@ -236,17 +194,19 @@
               alteration in some form
             </p>
             <ul class="second-block__arguments-list">
-              <li class="second-block__arguments-item">Lorem Ipsum</li>
-              <li class="second-block__arguments-item">Lorem Ipsum</li>
-              <li class="second-block__arguments-item">Lorem Ipsum</li>
-              <li class="second-block__arguments-item">Lorem Ipsum</li>
-              <li class="second-block__arguments-item">Lorem Ipsum</li>
-              <li class="second-block__arguments-item">Lorem Ipsum</li>
+              <li
+                v-for="(argumentsItem, idx) in 6"
+                :key="idx"
+                class="second-block__arguments-item"
+              >
+                Lorem Ipsum
+              </li>
             </ul>
           </div>
         </div>
       </section>
-      <section class="third-block">
+      <third-block></third-block>
+      <!-- <section class="third-block">
         <div class="third-block__title_wrapper">
           <h2 class="third-block__title">Lorem Ipsum</h2>
           <span class="third-block__title-line"></span>
@@ -300,7 +260,7 @@
             <a class="button" href="#">Lorem Ipsum</a>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <section class="fourth-block">
         <div class="fourth-block_wrapper">
@@ -426,13 +386,11 @@
           </ul>
           <div class="fourth-block__additional-wrapper">
             <ul class="fourth-block__additional-list">
-              <li class="fourth-block__additional-item">
-                Lorem Ipsum is simply
-              </li>
-              <li class="fourth-block__additional-item">
-                Lorem Ipsum is simply
-              </li>
-              <li class="fourth-block__additional-item">
+              <li
+                v-for="(additionalItem, idx) in 3"
+                :key="idx"
+                class="fourth-block__additional-item"
+              >
                 Lorem Ipsum is simply
               </li>
             </ul>
@@ -591,92 +549,57 @@
       <div class="page-footer-container">
         <div class="page-footer__social-wrapper">
           <ul class="page-footer__social-list social">
-            <li class="social-item">
-              <a class="social-item__link" href="#">
-                <span class="visually-hidden">We are in Facebook</span>
-                <svg class="social-item___image" width="30" height="30">
-                  <use xlink:href="@/assets/img/sprite_icon.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="social-item__link" href="#">
-                <span class="visually-hidden">We are in Instagram</span>
+            <li
+              v-for="(socialItem, idx) in footerContent.social"
+              :key="idx"
+              class="social-item"
+            >
+              <a class="social-item__link" :href="socialItem.url">
+                <span class="visually-hidden">{{ socialItem.title }}</span>
                 <svg class="social-item___image" width="30" height="30">
                   <use
-                    xlink:href="@/assets/img/sprite_icon.svg#instagram"
+                    :xlink:href="
+                      require('@/assets/img/sprite_icon.svg') +
+                      `#${socialItem.name}`
+                    "
                   ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="social-item__link" href="#">
-                <span class="visually-hidden">We are in Youtube</span>
-                <svg class="social-item___image" width="30" height="30">
-                  <use xlink:href="@/assets/img/sprite_icon.svg#youtube"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social-item__link" href="#">
-                <span class="visually-hidden">We are in Twitter</span>
-                <svg class="social-item___image" width="30" height="30">
-                  <use xlink:href="@/assets/img/sprite_icon.svg#twitter"></use>
                 </svg>
               </a>
             </li>
           </ul>
           <a class="copyright__link" href="#">© 2020 Vis-A-Vis</a>
         </div>
-        <ul class="page-footer__link-list">
-          <li class="page-footer__link-item">
-            <a class="page-footer__link" href="">Lorem</a>
-          </li>
-          <li class="page-footer__link-item">
-            <a class="page-footer__link" href="">Ipsum</a>
-          </li>
-          <li class="page-footer__link-item">
-            <a class="page-footer__link" href="">Demmy</a>
-          </li>
-          <li class="page-footer__link-item">
-            <a class="page-footer__link" href="">Text</a>
-          </li>
-        </ul>
-        <ul class="page-footer__link-list">
-          <li class="page-footer__link-item">
-            <a class="page-footer__link" href="">Lorem</a>
-          </li>
-          <li class="page-footer__link-item">
-            <a class="page-footer__link" href="">Ipsum</a>
-          </li>
-          <li class="page-footer__link-item">
-            <a class="page-footer__link" href="">Demmy</a>
-          </li>
-          <li class="page-footer__link-item">
-            <a class="page-footer__link" href="">Text</a>
-          </li>
-        </ul>
-        <ul class="page-footer__link-list">
-          <li class="page-footer__link-item">
-            <a class="page-footer__link" href="">Lorem</a>
-          </li>
-          <li class="page-footer__link-item">
-            <a class="page-footer__link" href="">Ipsum</a>
-          </li>
-          <li class="page-footer__link-item">
-            <a class="page-footer__link" href="">Demmy</a>
-          </li>
-          <li class="page-footer__link-item">
-            <a class="page-footer__link" href="">Text</a>
-          </li>
-        </ul>
+        <link-footer-list
+          v-for="(linkList, idx) in 3"
+          :key="idx"
+        ></link-footer-list>
       </div>
     </footer>
   </div>
 </template>
 <script>
+import mainNavigation from "@/static/main-navigation.json";
+import firstBlockList from "@/static/first-block.json";
+import secondBlockContent from "@/static/second-block.json";
+import footerContent from "@/static/footer-content.json";
+import LinkFooterList from "@/components/LinkFooterList.vue";
+import ThirdBlock from "@/components/ThirdBlock.vue";
+
 export default {
   name: "Index",
+  data() {
+    return {
+      mainNavigation,
+      firstBlockList,
+      secondBlockContent,
+      footerContent,
+    };
+  },
+  components: {
+    LinkFooterList,
+    ThirdBlock,
+  },
 };
 </script>
-<style lang="sass" scoped></style>
+ThirdBlock
+<style LinkFooterListlang="sass" scoped></style>
