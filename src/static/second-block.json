@@ -1,0 +1,28 @@
+{
+  "advantages": [
+    {
+      "icon": "01",
+      "content": "Contrary to popular belief, Lorem Ipsum"
+    },
+    {
+      "icon": "02",
+      "content": "Random text it has roots in a piece of classical"
+    },
+    {
+      "icon": "03",
+      "content": "Latin literature from 45 BC, making it over 2000 years old"
+    },
+    {
+      "icon": "04",
+      "content": "Latin literature from 45 BC, making it over 2000 years old"
+    },
+    {
+      "icon": "05",
+      "content": "If you are going to use a passage of Lorem Ipsum"
+    },
+    {
+      "icon": "06",
+      "content": "There are many variations of passages of Lorem Ipsum"
+    }
+  ]
+}

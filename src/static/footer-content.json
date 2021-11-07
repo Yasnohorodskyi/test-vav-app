@@ -1,0 +1,42 @@
+{
+  "social": [
+    {
+      "name": "facebook",
+      "url": "#",
+      "title": "We are in Facebook"
+    },
+    {
+      "name": "instagram",
+      "url": "#",
+      "title": "We are in Instagram"
+    },
+    {
+      "name": "youtube",
+      "url": "#",
+      "title": "We are in Youtube"
+    },
+    {
+      "name": "twitter",
+      "url": "#",
+      "title": "We are in Twitter"
+    }
+  ],
+  "footerLinks": [
+    {
+      "name": "Lorem",
+      "url": "#"
+    },
+    {
+      "name": "Ipsum",
+      "url": "#"
+    },
+    {
+      "name": "Demmy",
+      "url": "#"
+    },
+    {
+      "name": "Text",
+      "url": "#"
+    }
+  ]
+}
