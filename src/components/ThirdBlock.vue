@@ -1,5 +1,9 @@
 <template>
   <section class="third-block">
+    <intersection-observer
+      sentinal-third-block="sentinal-third-block"
+      @on-intersection-element="onIntersectionElement"
+    ></intersection-observer>
     <div class="third-block__title_wrapper">
       <h2 class="third-block__title">Lorem Ipsum</h2>
       <span class="third-block__title-line"></span>
@@ -39,6 +43,8 @@
 </template>
 <script>
 import thirdBlockList from "@/static/third-block.json";
+import IntersectionObserver from "@/components/IntersectionObserver.vue";
+
 export default {
   name: "ThirdBlock",
   data() {
@@ -50,21 +56,34 @@ export default {
       elementsCount: 5,
       // Интервал между появлением элементров.
       interval: 1000,
+      // переменная прохождения границы видимоти элемента
+      isIntersectingElement: false,
+      // ID таймера
+      timerID: null,
+      //контент таймера
+      timerContent: null,
     };
   },
-
-  /**
-   * Используем хук `mounted` для запуска таймера.
-   */
-
-  mounted() {
-    let timerID = this;
-    setInterval(function () {
-      timerID.nextItem();
-    }, this.interval);
+  components: {
+    IntersectionObserver,
   },
 
   methods: {
+    //Метод активирует таймер и смену класса
+    onIntersectionElement(value, timerID, timerContent) {
+      this.isIntersectingElement = value;
+      timerContent = this;
+
+      if (this.isIntersectingElement) {
+        timerID = setInterval(function () {
+          timerContent.nextItem();
+          if (!timerContent.isIntersectingElement) {
+            clearInterval(timerID);
+          }
+        }, this.interval);
+      }
+      this.currentIndex = 1;
+    },
     //Метод активирует линию
     isLineActive(index) {
       if (this.currentIndex >= index) {
