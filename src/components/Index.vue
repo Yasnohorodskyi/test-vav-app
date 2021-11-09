@@ -206,141 +206,7 @@
         </div>
       </section>
       <third-block></third-block>
-      <section class="fourth-block">
-        <div class="fourth-block_wrapper">
-          <h2 class="fourth-block__title visually-hidden">Lorem</h2>
-          <ul class="fourth-block__list persons">
-            <li class="persons__item">
-              <div class="persons__item-image-wrapper">
-                <img
-                  class="persons__item-image-nimb"
-                  src="@/assets/img/Ellipse.png"
-                  alt=""
-                />
-                <span class="persons__item-first-image"></span>
-              </div>
-              <h3 class="persons__item-title">
-                Lorem Ipsum is simply dummy text
-              </h3>
-              <p class="persons__item-desription">
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-              </p>
-              <ul class="persons__item-list">
-                <li class="persons__item-point">
-                  Lorem Ipsum has been the industry's
-                </li>
-                <li class="persons__item-point">
-                  Standard dummy text ever since
-                </li>
-                <li class="persons__item-point">
-                  But also the leap into electronic typesetting
-                </li>
-              </ul>
-            </li>
-            <li class="persons__item">
-              <div class="persons__item-image-wrapper">
-                <span class="persons__item-image"></span>
-              </div>
-              <h3 class="persons__item-title">
-                Lorem Ipsum is simply dummy text
-              </h3>
-              <p class="persons__item-desription">
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-              </p>
-              <ul class="persons__item-list">
-                <li class="persons__item-point">
-                  Lorem Ipsum has been the industry's
-                </li>
-                <li class="persons__item-point">
-                  Standard dummy text ever since
-                </li>
-                <li class="persons__item-point">
-                  But also the leap into electronic typesetting
-                </li>
-                <li class="persons__item-point">
-                  It was popularised in the 1960s
-                </li>
-              </ul>
-            </li>
-            <li class="persons__item">
-              <div class="persons__item-image-wrapper">
-                <span class="persons__item-image"></span>
-              </div>
-              <h3 class="persons__item-title">
-                Lorem Ipsum is simply dummy text
-              </h3>
-              <p class="persons__item-desription">
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-              </p>
-              <ul class="persons__item-list">
-                <li class="persons__item-point">
-                  Lorem Ipsum has been the industry's standard dummy text ever
-                  since
-                </li>
-                <li class="persons__item-point">
-                  But also the leap into electronic typesetting
-                </li>
-              </ul>
-            </li>
-            <li class="persons__item">
-              <div class="persons__item-image-wrapper">
-                <span class="persons__item-image"></span>
-              </div>
-              <h3 class="persons__item-title">Lorem Ipsum simply</h3>
-              <p class="persons__item-desription">
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-              </p>
-              <ul class="persons__item-list">
-                <li class="persons__item-point">
-                  Lorem Ipsum has been the industry's
-                </li>
-                <li class="persons__item-point">
-                  Standard dummy text ever since
-                </li>
-                <li class="persons__item-point">
-                  But also the leap into electronic typesetting
-                </li>
-              </ul>
-            </li>
-            <li class="persons__item">
-              <div class="persons__item-image-wrapper">
-                <span class="persons__item-image"></span>
-              </div>
-              <h3 class="persons__item-title">Lorem Ipsum simply</h3>
-              <p class="persons__item-desription">
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-              </p>
-              <ul class="persons__item-list">
-                <li class="persons__item-point">
-                  Lorem Ipsum has been the industry's
-                </li>
-                <li class="persons__item-point">
-                  Standard dummy text ever since
-                </li>
-                <li class="persons__item-point">
-                  But also the leap into electronic typesetting
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <div class="fourth-block__additional-wrapper">
-            <ul class="fourth-block__additional-list">
-              <li
-                v-for="(additionalItem, idx) in 3"
-                :key="idx"
-                class="fourth-block__additional-item"
-              >
-                Lorem Ipsum is simply
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
+      <fourth-block></fourth-block>
       <section class="fifth-block">
         <h2 class="fifth-block__title">Lorem Ipsum is simply dummy text</h2>
         <div class="fifth-block__inner-wrapper">
@@ -528,6 +394,7 @@ import secondBlockContent from "@/static/second-block.json";
 import footerContent from "@/static/footer-content.json";
 import LinkFooterList from "@/components/LinkFooterList.vue";
 import ThirdBlock from "@/components/ThirdBlock.vue";
+import FourthBlock from "@/components/FourthBlock.vue";
 
 export default {
   name: "Index",
@@ -542,6 +409,7 @@ export default {
   components: {
     LinkFooterList,
     ThirdBlock,
+    FourthBlock,
   },
 };
 </script>
