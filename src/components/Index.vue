@@ -206,62 +206,6 @@
         </div>
       </section>
       <third-block></third-block>
-      <!-- <section class="third-block">
-        <div class="third-block__title_wrapper">
-          <h2 class="third-block__title">Lorem Ipsum</h2>
-          <span class="third-block__title-line"></span>
-        </div>
-        <ul class="third-block__list">
-          <li class="third-block__item">
-            <svg
-              class="third-block__item-icon third-block__item-icon--active"
-              width="50"
-              height="50"
-            >
-              <use xlink:href="@/assets/img/sprite_icon.svg#id-card"></use>
-            </svg>
-            <span
-              class="third-block__item-line third-block__item-line--active"
-            ></span>
-            <p class="third-block__item-content">Lorem Ipsum is simply dummy</p>
-          </li>
-          <li class="third-block__item">
-            <svg class="third-block__item-icon" width="50" height="50">
-              <use xlink:href="@/assets/img/sprite_icon.svg#smartphone"></use>
-            </svg>
-            <span class="third-block__item-line"></span>
-            <p class="third-block__item-content">Lorem Ipsum is simply dummy</p>
-          </li>
-          <li class="third-block__item">
-            <svg class="third-block__item-icon" width="50" height="50">
-              <use xlink:href="@/assets/img/sprite_icon.svg#laptop"></use>
-            </svg>
-            <span class="third-block__item-line"></span>
-            <p class="third-block__item-content">Lorem Ipsum is simply dummy</p>
-          </li>
-          <li class="third-block__item">
-            <svg class="third-block__item-icon" width="50" height="50">
-              <use xlink:href="@/assets/img/sprite_icon.svg#chat"></use>
-            </svg>
-            <span class="third-block__item-line"></span>
-            <p class="third-block__item-content">Lorem Ipsum is simply dummy</p>
-          </li>
-          <li class="third-block__item third-block__item-last">
-            <svg class="third-block__item-icon" width="50" height="50">
-              <use xlink:href="@/assets/img/sprite_icon.svg#line-chart"></use>
-            </svg>
-            <span class="third-block__item-line"></span>
-            <p class="third-block__item-content">Lorem Ipsum is simply dummy</p>
-          </li>
-        </ul>
-        <div class="third-block__button-wrapper">
-          <span class="third-block__button-line"></span>
-          <div class="third-block__button button-wrapper">
-            <a class="button" href="#">Lorem Ipsum</a>
-          </div>
-        </div>
-      </section> -->
-
       <section class="fourth-block">
         <div class="fourth-block_wrapper">
           <h2 class="fourth-block__title visually-hidden">Lorem</h2>
