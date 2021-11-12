@@ -32,9 +32,8 @@
   display: block;
   height: 1px;
   background-color: $line;
-  border: 1px solid $line
+  border: 1px solid $line;
 }
-
 
 @mixin base-width {
   width: 1530px;
@@ -65,6 +64,26 @@
   font-weight: 700;
   font-size: 30px;
   line-height: 1em;
+}
+
+@mixin arrow {
+  position: absolute;
+  top: 29px;
+  left: 15px;
+  display: block;
+  box-sizing: content-box;
+  width: 30px;
+  height: 2px;
+  background: $blue;
+  border: 1px solid $blue;
+
+  &::before {
+    display: block;
+    content: "";
+    box-sizing: content-box;
+    width: 15px;
+    height: 15px;
+  }
 }
 // Технические миксины
 
