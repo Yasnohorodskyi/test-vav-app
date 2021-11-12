@@ -66,7 +66,7 @@
           </div>
         </div>
       </section>
-      <section class="second-block">
+      <!-- <section class="second-block">
         <div class="second-block__features-wrapper">
           <div class="second-block__title-wrapper">
             <h2 class="second-block__title">Lorem</h2>
@@ -204,156 +204,11 @@
             </ul>
           </div>
         </div>
-      </section>
-      <third-block></third-block>
-      <fourth-block></fourth-block>
-      <section class="fifth-block">
-        <h2 class="fifth-block__title">Lorem Ipsum is simply dummy text</h2>
-        <div class="fifth-block__inner-wrapper">
-          <div class="fifth-block__form-wrapper">
-            <h3 class="fifth-block__form-header">
-              It is a long established fact that a reader
-            </h3>
-            <form
-              class="fifth-block__form form"
-              action="/form-sending"
-              method="post"
-            >
-              <div class="form__name-wrapper">
-                <input
-                  class="form__field"
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder=" "
-                  minlength="2"
-                  maxlength="25"
-                  required
-                />
-                <label class="form__field-label" for="name"
-                  >Name <span class="form__field-sign">*</span></label
-                >
-              </div>
-              <div class="form__contact-wrapper">
-                <div class="form__tel-wrapper">
-                  <input
-                    class="form__field"
-                    type="tel"
-                    name="phone"
-                    id="tel"
-                    placeholder=" "
-                    pattern="^[0-9]+$"
-                    required
-                  />
-                  <label class="form__field-label" for="tel"
-                    >Phone <span class="form__field-sign">*</span></label
-                  >
-                </div>
-                <div class="form__email-wrapper">
-                  <input
-                    class="form__field"
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder=" "
-                    required
-                  />
-                  <label class="form__field-label" for="email"
-                    >Email <span class="form__field-sign">*</span></label
-                  >
-                </div>
-              </div>
-              <small class="form__tagline"
-                ><span class="fifth-block__form-tagline-arrow">* </span>Lorem
-                Ipsum is simply dummy</small
-              >
-              <div class="form__calculator-wrapper">
-                <div class="form__calculator-value-wrapper">
-                  <span class="form__calculator-value">3000 грн</span>
-                </div>
-                <div class="form__range-slader-wrapper">
-                  <input
-                    class="form__range-slader"
-                    type="range"
-                    name="calculator"
-                    min="0"
-                    max="7000"
-                    required
-                  />
-                  <div class="form__range-scale-wrapper">
-                    <div class="form__range-scale form__range-scale--1">
-                      <span class="form__range-scale-point"></span>
-                      <span class="form__range-scale-number">500 грн</span>
-                    </div>
-                    <div class="form__range-scale form__range-scale--2">
-                      <span class="form__range-scale-point"></span>
-                      <span class="form__range-scale-number">1500 грн</span>
-                    </div>
-                    <div class="form__range-scale form__range-scale--3">
-                      <span class="form__range-scale-point"></span>
-                      <span class="form__range-scale-number">2500 грн</span>
-                    </div>
-                    <div class="form__range-scale form__range-scale--4">
-                      <span class="form__range-scale-point"></span>
-                      <span class="form__range-scale-number">3500 грн</span>
-                    </div>
-                    <div class="form__range-scale form__range-scale--5">
-                      <span class="form__range-scale-point"></span>
-                      <span class="form__range-scale-number">4500 грн</span>
-                    </div>
-                    <div class="form__range-scale form__range-scale--6">
-                      <span class="form__range-scale-point"></span>
-                      <span class="form__range-scale-number">5500 грн</span>
-                    </div>
-                    <div class="form__range-scale form__range-scale--7">
-                      <span class="form__range-scale-point"></span>
-                      <span class="form__range-scale-number">6500 грн</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="form__checkbox-batton-wrapper">
-                <div>
-                  <input
-                    class="form__ckeckbox visually-hidden"
-                    type="checkbox"
-                    id="checkbox-agree"
-                    name="lorem-ipsum"
-                    value="Lorem Ipsum is simply dummy text"
-                    checked
-                  />
-                  <label class="form__ckeckbox-label" for="checkbox-agree"
-                    >Lorem Ipsum is simply dummy text</label
-                  >
-                </div>
-                <button class="form__ckeckbox-button button" type="submit">
-                  Lorem Ipsum
-                </button>
-              </div>
-            </form>
-          </div>
-          <div class="fifth-block__description-wrapper">
-            <h3 class="fifth-block__description-title">
-              It is a long established fact that a reader
-            </h3>
-            <a
-              class="fifth-block__description-email-link"
-              href="mailto:support@email.com"
-              >support@email.com</a
-            >
-            <p class="fifth-block__description-content">
-              There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered alteration in some form, by
-              injected humour, or randomised words which don't look even
-              slightly believable. If you are going to use a passage of Lorem
-              Ipsum, you need to be sure there isn't anything embarrassing
-              hidden in the middle of text. All the Lorem Ipsum generators on
-              the Internet tend to repeat predefined chunks as necessary, making
-              this the first true generator on the Internet.
-            </p>
-          </div>
-        </div>
-      </section>
+      </section> -->
+      <second-block />
+      <third-block />
+      <fourth-block />
+      <fifth-block />
     </main>
     <footer class="page-footer">
       <div class="page-footer-container">
@@ -379,10 +234,7 @@
           </ul>
           <a class="copyright__link" href="#">© 2020 Vis-A-Vis</a>
         </div>
-        <link-footer-list
-          v-for="(linkList, idx) in 3"
-          :key="idx"
-        ></link-footer-list>
+        <link-footer-list v-for="(linkList, idx) in 3" :key="idx" />
       </div>
     </footer>
   </div>
@@ -392,9 +244,12 @@ import mainNavigation from "@/static/main-navigation.json";
 import firstBlockList from "@/static/first-block.json";
 import secondBlockContent from "@/static/second-block.json";
 import footerContent from "@/static/footer-content.json";
+
 import LinkFooterList from "@/components/LinkFooterList.vue";
+import SecondBlock from "@/components/SecondBlock.vue";
 import ThirdBlock from "@/components/ThirdBlock.vue";
 import FourthBlock from "@/components/FourthBlock.vue";
+import FifthBlock from "@/components/FifthBlock.vue";
 
 export default {
   name: "Index",
@@ -410,8 +265,10 @@ export default {
     LinkFooterList,
     ThirdBlock,
     FourthBlock,
+    FifthBlock,
+    SecondBlock,
   },
 };
 </script>
-ThirdBlock
+
 <style LinkFooterListlang="sass" scoped></style>
