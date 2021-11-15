@@ -1,24 +1,6 @@
 # test-vav-app
 
-## Project setup
-```
-npm install
-```
+## VUE.JS test project
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Desktop version
+(https://yasnohorodskyi.github.io/test-vav-app/).
